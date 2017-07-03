@@ -1,0 +1,60 @@
+:export {
+	px760: '{"width": 760,"height": 960,"cellWidth": 180,"cellHeight": 220,"columnNum": 4,"cellSpacer": 8}';
+	px440: '{"width": 440,"height": 960,"cellWidth": 136,"cellHeight": 176,"columnNum": 3,"cellSpacer": 8}';
+	pxAuto: '{"height": 860,"cellWidth": 136,"cellHeight": 176,"cellSpacer": 8}';
+}
+
+.paper {
+	height: 1000px;
+	background-color: #ffffff;
+}
+
+.username {
+	width: 200px;
+	text-align: center;
+}
+
+.homeList {
+	position: static;
+	width: 200px;
+	margin-top: 20px;
+}
+
+.homeGradList_base {
+	position: absolute;
+	top: 20px;
+	left: 220px;
+	height: 960px;
+}
+
+.homeGradList {
+	composes: homeGradList_base;
+	width: 760px;
+}
+
+@media screen and (max-width: 1000px) {
+	.homeGradList {
+		composes: homeGradList_base;
+		width: 440px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.homeList {
+		position: absolute;
+		top: 0px;
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+	.username {
+		width: 100%;
+		text-align: center;
+	}
+	.homeGradList {
+		text-align: center;
+		position: static;
+		width: 0px;
+		height: 860px;
+		margin: 0 auto;
+	}
+}

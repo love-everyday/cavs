@@ -1,0 +1,40 @@
+{
+	"particles": {
+		"number": {
+			"value": 10
+		},
+		"color": {
+      		"value": "#ffffff"
+    	},
+		"line_linked": {
+			"distance": 120,
+			"opacity": 1,
+			"color": "#ffffff",
+			"shadow": {
+				"enable": false,
+				"color": "white",
+				"blur": 1
+			}
+		},
+		"move": {
+			"enable": true,
+			"bounce": false
+		}
+	},
+	"interactivity": {
+		"events": {
+			"onclick": {
+	        	"enable": true,
+	        	"mode": "push"
+	      	}
+		},
+		"modes": {
+			"push": {
+		    	"particles_nb": 4
+			},
+			"remove": {
+				"particles_nb": 4
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.base {}
+
+.home_base {
+	position: absolute;
+	top: 50px;
+	height: 1100px;
+	left: 50%;
+}
+
+.home {
+	composes: home_base;
+	width: 1000px;
+	margin-left: -500px;
+}
+
+@media screen and (max-width: 1000px) {
+	.home {
+		composes: home_base;
+		width: 760px;
+		margin-left: -380px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.home {
+		composes: home_base;
+		left: 0px;
+		width: 100%;
+		margin-left: 0px;
+	}
+}
